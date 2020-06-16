@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Design Patterns</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Design Pattern - Module</legend>
+        <input type="text" id="total" readonly> 
+        <button onclick="Estoque.adicionar()">Adicionar</button>
+        <button onclick="Estoque.remover()">Remover</button>
+    </fieldset>
+    <fieldset>
+        <legend>Design Pattern - Prototype</legend>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" required>
+        <label for="nome">Telefone: </label>
+        <input type="text" id="telefone" required>
+        <label for="nome">Email: </label>
+        <input type="text" id="email" required> 
+        <label for="nome">Seus dados: </label>
+        <button onclick="cadastrar()">Cadastrar</button>
+    </fieldset>
+    <footer>
+        <script src="module.js"></script>
+        <script src="prototype.js"></script>
+    </footer>
+</body>
+</html>
