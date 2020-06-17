@@ -1,5 +1,5 @@
 
-/*function ClientePrototype(prototipo){
+function ClientePrototype(prototipo){
     this.prototipo = prototipo;
     this.clone = function(){
         var cliente = new Cliente();
@@ -30,56 +30,4 @@ function cadastrar(){
     
     var cliente = prototipo.clone();
     cliente.exibir();
-}  */
-
-
-class Cliente {
-    constructor() {
-        this.nome = '';
-        this.telefone = '';
-        this.email = '';
-    }
-
-    setNome(nome){
-        this.nome = nome;
-    }
-    getNome(){
-        return this.nome;
-    }
-
-    setTelefone(telefone){
-        this.telefone = telefone;
-    }
-    getTelefone(){
-        return this.telefone;
-    }
-
-    setEmail(email){
-        this.email = email;
-    }
-    getEmail(){
-        return this.email;
-    }
-} 
-
-function exibir(c){
-    let nome = c.getNome();
-    let telefone = c.getTelefone();
-    let email = c.getEmail();
-
-    alert("Nome: "+nome+" Telefone: "+telefone+" Email: "+email);
-}
-
-function cadastrar(){
-    let nome = document.getElementById('nome').value;
-    let telefone = document.getElementById('telefone').value;
-    let email = document.getElementById('email').value;
-
-    var c = new Cliente();
-
-    c.setNome(nome);
-    c.setEmail(email);
-    c.setTelefone(telefone);
-
-    exibir(c);
 }  
